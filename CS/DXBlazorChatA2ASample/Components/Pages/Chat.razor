@@ -1,0 +1,75 @@
+@page "/chat"
+@using DXBlazorChatA2ASample.Agents
+
+<DxFormLayout>
+    <DxFormLayoutItem Caption="Agent Provider:">
+        <DxComboBox Data="@AgentOptions"
+                    TextFieldName="@nameof(AgentOption.Text)"
+                    ValueFieldName="@nameof(AgentOption.Value)"
+                    @bind-Value="@CurrentServiceKey" />
+    </DxFormLayoutItem>
+    <DxFormLayoutItem Caption="Chat Actions:">
+        <DxButton Text="Clear Conversation"
+                  RenderStyle="ButtonRenderStyle.Secondary"
+                  Click="@ClearChatHistory" />
+    </DxFormLayoutItem>
+</DxFormLayout>
+
+<DxAIChat @ref="_dxAIChat" 
+          UseStreaming="true" 
+          ChatClientServiceKey="@CurrentServiceKey"
+          CssClass="chat-container">
+    <EmptyMessageAreaTemplate>
+        <div class="empty-message-area">
+            <h4>🤖 Multi-Agent AI Chat</h4>
+            <p>Welcome to the Agent-to-Agent communication platform! Choose your specialized AI agent and start chatting.</p>
+            
+            <div>
+                <h5>Available Agents:</h5>
+                <ul class="agents-list">
+                    <li><strong>🎭 Poem Agent:</strong> Enter 2-5 keywords and I'll generate a short lyrical poem</li>
+                    <li><strong>📜 Shakespearean Style Agent:</strong> Transform your text into William Shakespeare's style</li>
+                    <li><strong>📋 Task Agent:</strong> Help plan and execute task descriptions</li>
+                    <li><strong>Researcher Agent:</strong> Agent from https://github.com/a2aproject/a2a-dotnet/blob/main/samples/AgentServer/ResearcherAgent.cs </li>
+                    <li><strong>💬 Default Chat Client:</strong> Standard AI conversation</li>
+                </ul>
+            </div>
+            
+            <div>
+                <p><strong>Current Agent:</strong> <span class="current-agent-badge">@AgentOptions.FirstOrDefault(x => x.Value == CurrentServiceKey)?.Text</span></p>
+            </div>
+            
+            <p class="help-text">
+                <small>💡 Select an agent from the dropdown above, then type your message to start the conversation!</small>
+            </p>
+        </div>
+    </EmptyMessageAreaTemplate>
+</DxAIChat>
+
+@code {
+    private string? CurrentServiceKey = AgentsEndpoints.PoemAgent;
+    private DxAIChat? _dxAIChat;
+
+    private List<AgentOption> AgentOptions = new()
+    {
+        new AgentOption { Value = AgentsEndpoints.PoemAgent, Text = "Poem Agent" },
+        new AgentOption { Value = AgentsEndpoints.ShakespeareanStyleAgent, Text = "Shakespearean Style Agent" },
+        new AgentOption { Value = AgentsEndpoints.TaskAgent, Text = "Task Agent" },
+        new AgentOption { Value = AgentsEndpoints.ResearcherAgent, Text = "Researcher" },
+        new AgentOption { Value = string.Empty , Text = "Default Chat Client" }
+    };
+
+    private void ClearChatHistory()
+    {
+        if (_dxAIChat != null)
+        {
+            // Clear chat history by loading an empty collection of messages
+            _dxAIChat.LoadMessages(new List<BlazorChatMessage>());
+        }
+    }
+
+    public class AgentOption {
+        public string Value { get; set; }
+        public string Text { get; set; }
+    }
+}

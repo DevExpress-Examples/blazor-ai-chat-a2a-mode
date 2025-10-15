@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "A2A Startup Profile",
+    "Projects": [
+      {
+        "Path": "PoemAgentServer\\PoemAgentServer.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "ShakespeareanStyleAgentServer\\ShakespeareanStyleAgentServer.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "TaskAgentServer\\TaskAgentServer.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "ResearcherAgentServer\\ResearcherAgentServer.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "DXBlazorChatA2ASample\\DXBlazorChatA2ASample.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      }
+    ]
+  }
+]

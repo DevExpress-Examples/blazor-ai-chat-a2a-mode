@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXBlazorChatA2ASample", "DXBlazorChatA2ASample\DXBlazorChatA2ASample.csproj", "{9407426A-7ADA-46AD-8C28-4374B5BC5190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoemAgentServer", "PoemAgentServer\PoemAgentServer.csproj", "{C53C2E3A-2B14-400B-A0B3-F920656738AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShakespeareanStyleAgentServer", "ShakespeareanStyleAgentServer\ShakespeareanStyleAgentServer.csproj", "{628CD3AC-EBD4-49CA-9110-CF63544BFF4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskAgentServer", "TaskAgentServer\TaskAgentServer.csproj", "{0A182122-4C9C-4744-AF81-30DE41D488EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResearcherAgentServer", "ResearcherAgentServer\ResearcherAgentServer.csproj", "{A0907AF6-3B83-4991-BFD7-B1420B7F72CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A2AServer.Shared", "A2AServer.Shared\A2AServer.Shared.csproj", "{A722E129-BCBA-84DB-5C72-4CAB80DBD9D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9407426A-7ADA-46AD-8C28-4374B5BC5190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9407426A-7ADA-46AD-8C28-4374B5BC5190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9407426A-7ADA-46AD-8C28-4374B5BC5190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9407426A-7ADA-46AD-8C28-4374B5BC5190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53C2E3A-2B14-400B-A0B3-F920656738AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53C2E3A-2B14-400B-A0B3-F920656738AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53C2E3A-2B14-400B-A0B3-F920656738AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53C2E3A-2B14-400B-A0B3-F920656738AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628CD3AC-EBD4-49CA-9110-CF63544BFF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628CD3AC-EBD4-49CA-9110-CF63544BFF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628CD3AC-EBD4-49CA-9110-CF63544BFF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628CD3AC-EBD4-49CA-9110-CF63544BFF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A182122-4C9C-4744-AF81-30DE41D488EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A182122-4C9C-4744-AF81-30DE41D488EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A182122-4C9C-4744-AF81-30DE41D488EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A182122-4C9C-4744-AF81-30DE41D488EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0907AF6-3B83-4991-BFD7-B1420B7F72CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0907AF6-3B83-4991-BFD7-B1420B7F72CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0907AF6-3B83-4991-BFD7-B1420B7F72CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0907AF6-3B83-4991-BFD7-B1420B7F72CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A722E129-BCBA-84DB-5C72-4CAB80DBD9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A722E129-BCBA-84DB-5C72-4CAB80DBD9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A722E129-BCBA-84DB-5C72-4CAB80DBD9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A722E129-BCBA-84DB-5C72-4CAB80DBD9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3764968A-3BC0-42EA-A338-D23BE869C28C}
+	EndGlobalSection
+EndGlobal
