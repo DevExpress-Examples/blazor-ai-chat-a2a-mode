@@ -48,6 +48,15 @@ To run the example, configure Visual Studio to start multiple projects in the co
 > [!TIP]
 > Use the pre-built launch profile ([.slnLaunch](/CS/DXBlazorChatA2ASample.slnLaunch)) to start all projects with a single click.
 
+> [!Note]
+> We use the following versions of Microsoft AI packages in our `v25.2.2+` source code:
+>
+> * `Microsoft.Extensions.AI` | **9.7.1**
+> * `Microsoft.Extensions.AI.OpenAI` | **9.7.1-preview.1.25365.4**
+> * `Azure.AI.OpenAI` | **2.2.0-beta.5**
+>
+> We do not guarantee compatibility or correct operation with higher versions. Refer to the following announcement for additional information: [DevExpress.AIIntegration moves to a stables version](https://supportcenter.devexpress.com/ticket/details/t1292705/devexpress-aiintegration-references-stable-versions-of-microsoft-ai-packages).
+
 ## Project Structure
 
 The solution includes the following projects:
