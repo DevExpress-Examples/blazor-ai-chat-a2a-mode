@@ -138,7 +138,7 @@ The implementation supports the following providers:
 
 ### A2A Server (Shared)
 
-Defines base classes for AI agents that adnere the A2A protocol and contains the configuration model ([AzureOpenAIServiceSettings](./CS/A2AAgents.Shared/AzureOpenAIServiceSettings.cs)).
+Defines base classes for AI agents that adnere the A2A protocol and contains the configuration model ([AzureOpenAIServiceSettings](./CS/A2AServer.Shared/AzureOpenAIServiceSettings.cs)).
 
 ### Agent Servers
 
@@ -193,7 +193,7 @@ BaseAgent (Abstract)
 
 ### Base Agent Classes
 
-The [`BaseAgent`](./CS/A2AAgentsServer/Agents/Base/BaseAgent.cs) abstract class implements core functionality for AI agents:
+The [`BaseAgent`](./CS/A2AServer.Shared/Agents/Base/BaseAgent.cs) abstract class implements core functionality for AI agents:
 
 ```csharp
 public abstract class BaseAgent {
@@ -213,7 +213,7 @@ public abstract class BaseAgent {
 }
 ```
 
-The [`BaseMessageAgent`](./CS/A2AAgentsServer/Agents/Base/BaseMessageAgent.cs) abstract class is a base class for AI agents that process messages:
+The [`BaseMessageAgent`](./CS/A2AServer.Shared/Agents/Base/BaseMessageAgent.cs) abstract class is a base class for AI agents that process messages:
 
 ```csharp
 public abstract class BaseMessageAgent : BaseAgent {
@@ -227,7 +227,7 @@ public abstract class BaseMessageAgent : BaseAgent {
 }
 ```
 
-The [`BaseTaskAgent`](./CS/A2AAgentsServer/Agents/Base/BaseTaskAgent.cs) abstract class manages and tracks task lifecycles. It defines hooks that create/update tasks and exposes the agent's capabilities through the `GetAgentCardAsync` method for external discovery or integration.
+The [`BaseTaskAgent`](./CS/A2AServer.Shared/Agents/Base/BaseTaskAgent.cs) abstract class manages and tracks task lifecycles. It defines hooks that create/update tasks and exposes the agent's capabilities through the `GetAgentCardAsync` method for external discovery or integration.
 
 ```csharp
 public abstract class BaseTaskAgent : BaseAgent {
@@ -254,7 +254,7 @@ The following AI agents extend the base agent architecture. They implement messa
 
 ### DevExpress AI Chat Integration
 
-The [DxAIChat.ChatClientServiceKey](DevExpress.AIIntegration.Blazor.Chat.DxAIChat.ChatClientServiceKey) property associates the chat component with a chat client service. Users can switch agents in real time using the combo box: 
+The [DxAIChat.ChatClientServiceKey](https://docs.devexpress.com/Blazor/DevExpress.AIIntegration.Blazor.Chat.DxAIChat.ChatClientServiceKey) property associates the chat component with a chat client service. Users can switch agents in real time using the combo box: 
 
 ```razor
 <DxAIChat @ref="dxAIChat" 
@@ -272,7 +272,7 @@ The [DxAIChat.ChatClientServiceKey](DevExpress.AIIntegration.Blazor.Chat.DxAICha
 
 #### Display Instructions
 
-The [EmptyMessageAreaTemplate](DevExpress.AIIntegration.Blazor.Chat.DxAIChat.EmptyMessageAreaTemplate) defines the content displayed when the chat is empty (such as available agents and instructions). This template appears at startup or after the user clears the chat.
+The [EmptyMessageAreaTemplate](https://docs.devexpress.com/Blazor/DevExpress.AIIntegration.Blazor.Chat.DxAIChat.EmptyMessageAreaTemplate) defines the content displayed when the chat is empty (such as available agents and instructions). This template appears at startup or after the user clears the chat.
 
 ![Welcome Screen - Blazor AI Chat, DevExpress](/devexpress-blazor-aichat-welcome-screen.png)
 
@@ -409,9 +409,9 @@ public sealed class MessageAgentChatClient : DelegatingChatClient {
 
 ### Agent Base Classes
 
-* [BaseAgent.cs](./CS/A2AAgents.Shared/Agents/Base/BaseAgent.cs)
-* [BaseMessageAgent.cs](./CS/A2AAgents.Shared/Agents/Base/BaseMessageAgent.cs)
-* [BaseTaskAgent.cs](./CS/A2AAgents.Shared/Agents/Base/BaseTaskAgent.cs)
+* [BaseAgent.cs](./CS/A2AServer.Shared/Agents/Base/BaseAgent.cs)
+* [BaseMessageAgent.cs](./CS/A2AServer.Shared/Agents/Base/BaseMessageAgent.cs)
+* [BaseTaskAgent.cs](./CS/A2AServer.Shared/Agents/Base/BaseTaskAgent.cs)
 
 ### Agents
 
