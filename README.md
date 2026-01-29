@@ -183,7 +183,7 @@ BaseAgent (Abstract)
 
 ### Base Agent Classes
 
-The [`BaseAgent`](.CS/A2AServer.Shared/Agents/Base/BaseAgent.cs) abstract class implements core functionality for AI agents:
+The [BaseAgent](./CS/A2AServer.Shared/Agents/Base/BaseAgent.cs) abstract class implements core functionality for AI agents:
 
 ```csharp
 public abstract class BaseAgent {
