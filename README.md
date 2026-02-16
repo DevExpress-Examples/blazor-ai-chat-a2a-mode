@@ -434,7 +434,7 @@ public sealed class MessageAgentChatClient : DelegatingChatClient {
 - [Blazor AI Chat Demos (DevExpress)](https://demos.devexpress.com/blazor/AI/Chat)
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=blazor-ai-chat-a2a-mode&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=blazor-ai-chat-a2a-mode&~~~was_helpful=no)
 
