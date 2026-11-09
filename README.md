@@ -25,8 +25,8 @@ In this specific example, you can:
 
 ## Prerequisites
 
-- .NET 8+ SDK
-- Visual Studio 2022, JetBrains Rider, or Visual Studio Code with C# extension
+- .NET 10+ SDK
+- Visual Studio 2022 (or later), JetBrains Rider, or Visual Studio Code with C# extension
 
 ## Get Started
 
